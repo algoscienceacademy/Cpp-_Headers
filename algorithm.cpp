@@ -1,6 +1,6 @@
 /** --------------------------------------------------------------------------------------------------------
 * Title: Algorithm
-* Mastering C++ Programming Competetive Programming Guide All Header Files
+* Mastering C++ Programming Compehensive Programming Guide All Header Files
 * Author: Shahrear Hossain Shawon
 * cradit: Cpp cons, Cpp std Library , ChatGPT
 * github : algoscienceacademy
@@ -397,7 +397,7 @@ on non-modifying and modifying sequence operations, sorting, searching, and more
 // }
 
 // run command : g++ -std=c++11 algorithm.cpp -o algorithm
-// Output: After nth_element (3rd smallest): 1 1 2 3 5 9 4
+// Output: After nth_element (3rd smallest): 1 1 2 3 4 5 9 
 
 /*--------------------Example 11: std::set_union------------------*/
 
@@ -926,6 +926,8 @@ on non-modifying and modifying sequence operations, sorting, searching, and more
 //     return 0;
 // }
 
+//run command : g++ -std=c++11 algorithm.cpp -o algorithm
+// Output: First mismatch at position: 2 
 
 
 /*
