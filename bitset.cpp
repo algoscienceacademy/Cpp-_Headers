@@ -161,4 +161,26 @@ Number of set bits:      4
 Bit at position 2:       1
 =====================================================================*/
 
+/* ---------------------------Example 2: Modifying Bits-------------------------*/
 
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b("10101010");
+
+//     b.set(0);    // Set bit 0 to 1
+//     b.reset(1);  // Reset bit 1 to 0
+//     b.flip(2);   // Flip bit 2
+
+//     std::cout << "After modifications: " << b << "\n";
+
+//     return 0;
+// }
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+After modifications: 10101011
+=====================================================================*/
