@@ -1,36 +1,45 @@
-/** --------------------------------------------------------------------------------------------------------
-* Title: Bitset
-* Mastering C++ Programming Compehensive Programming Guide All Header Files
-* Author: Shahrear Hossain Shawon
-* cradit: Cpp cons, Cpp std Library , ChatGPT
-* github : algoscienceacademy
-* Licence : LGPL Licence
-* UploadDate :  27 jan 2025
-* LastModified:  29 jan 2025
-
-MIT License 
-International Islamic University Chittagong (IIUC) License
-
-Copyright (c) 2025  GPL
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
---------------------------------------------------------------------------------------------------------------*/
+/******************************************************************************
+ * Title: Bitset - Comprehensive C++ Programming Guide
+ * 
+ * Description:
+ * A comprehensive guide to C++ Bitset implementation and best practices.
+ * Part of the C++ Programming Header Series.
+ * 
+ * Author: Shahrear Hossain Shawon
+ * GitHub: algoscienceacademy
+ * Institution: International Islamic University Chittagong (IIUC)
+ * 
+ * Version: 1.0.0
+ * Created: January 27, 2025
+ * Updated: January 29, 2025
+ * 
+ * Credits:
+ * - C++ Standard Library
+ * - C++ Reference
+ * - ChatGPT
+ * 
+ * License: MIT License
+ * 
+ * Copyright (c) 2025
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ ******************************************************************************/
 
 /*=======================================================================================
 |                     Mastering <bitset> in C++: A Complete Learning Guide               |
@@ -74,5 +83,45 @@ Common Use Cases:
 | .to_ulong()   | Converts to unsigned long    | b.to_ulong();            |
 | .to_string()  | Converts to binary string    | b.to_string();           |
 ========================================================================*/
+
+
+/*============================ Pro Tips for Learning <bitset> Faster ============================
+|                                                                                             |
+| 1. Visualize Binary Representations                                                         |
+|    - Use std::bitset<N>::to_string() for clear binary visualization                         |
+|    - Practice reading and interpreting binary patterns                                      |
+|    - Experiment with different sizes of bitsets                                             |
+|                                                                                             |
+| 2. Write Small Experiments                                                                  |
+|    - Practice with fundamental operations:                                                  |
+|      * set() for setting bits to 1                                                          |
+|      * reset() for clearing bits to 0                                                       |
+|      * flip() for toggling bits                                                              |
+|      * count() for counting set bits                                                        |
+|                                                                                             |
+| 3. Solve Bitwise Problems                                                                   |
+|    - Implement common bit manipulation algorithms:                                          |
+|      * Parity checking                                                                      |
+|      * Gray code generation                                                                 |
+|      * Hamming code implementation                                                          |
+|      * Subnet mask calculations                                                             |
+|                                                                                             |
+| 4. Performance Comparison                                                                   |
+|    - Compare with vector<bool>:                                                             |
+|      * Memory efficiency                                                                     |
+|      * Access speed                                                                         |
+|      * Operation performance                                                                |
+|                                                                                             |
+| 5. Real-World Applications                                                                  |
+|    - Study practical uses in:                                                               |
+|      * Cryptography algorithms                                                              |
+|      * Data compression                                                                     |
+|      * Network programming (IPv4/IPv6)                                                      |
+|      * Error correction codes                                                               |
+|      * Bloom filters implementation                                                          |
+|                                                                                             |
+=============================================================================================*/
+
+
 
 
