@@ -209,3 +209,26 @@ b1 & b2: 1000
 b1 | b2: 1110
 b1 ^ b2: 0110
 =====================================================================*/
+
+
+/* ----------------------------Example 4: Counting Bits and Checking Specific Bits-------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b("11010010");
+
+//     std::cout << "Number of set bits: " << b.count() << "\n";    // Count 1s
+//     std::cout << "Is bit 3 set? " << b.test(3) << "\n";         // Test bit 3
+
+//     return 0;
+// }
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Number of set bits: 4
+Is bit 3 set? 1
+=====================================================================*/
