@@ -184,3 +184,28 @@ Command: g++ -std=c++11 bitset.cpp -o bitset
 Results:
 After modifications: 10101011
 =====================================================================*/
+
+/* ---------------------------Example 3: Bitwise Operations-------------------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b1("1100");
+//     std::bitset<8> b2("1010");
+
+//     std::cout << "b1 & b2: " << (b1 & b2) << "\n"; // AND
+//     std::cout << "b1 | b2: " << (b1 | b2) << "\n"; // OR
+//     std::cout << "b1 ^ b2: " << (b1 ^ b2) << "\n"; // XOR
+
+//     return 0;
+// }
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+b1 & b2: 1000
+b1 | b2: 1110
+b1 ^ b2: 0110
+=====================================================================*/
