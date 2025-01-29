@@ -55,13 +55,13 @@ on non-modifying and modifying sequence operations, sorting, searching, and more
 
   ------------------------------------------------------------------------------------------------------------------------------------------
   | . Modular and Reusable Code             | Contains generic algorithms that can operate on a variety of container types.                |
-  |                                         | Uses iterators to provide flexibility in working with different container types.             |
+  |                                         | Uses iterators to provide flexibility in working with different container types.              |
   ..........................................|..............................................................................................|
-  | . Non-Modifying Sequence Operations     | Functions that do not alter the input data, such as std::find, std::count, std::all_of, etc. |
+  | . Non-Modifying Sequence Operations     | Functions that do not alter the input data, such as std::find, std::count, std::all_of, etc.  |
   ..........................................|..............................................................................................|
   | . Modifying Sequence Operations         | Functions that modify the container or range, like std::copy, std::remove, std::replace.     |
   ..........................................|..............................................................................................|
-  | . Sorting and Partitioning              | Includes efficient sorting algorithms like std::sort, std::stable_sort, and partitioning     |
+  | . Sorting and Partitioning              | Includes efficient sorting algorithms like std::sort, std::stable_sort, and partitioning      |
   |                                         |                                                              algorithms like std::partition. |
   ..........................................|..............................................................................................|
   | . Searching and Merging                 | Provides functions like std::binary_search, std::merge, and std::lower_bound.                |
@@ -71,7 +71,7 @@ on non-modifying and modifying sequence operations, sorting, searching, and more
   | . Set Operations                        | Functions like std::set_union, std::set_difference to operate on sorted ranges as            |
   |                                         |                                                                 mathematical sets.           |
   ..........................................|..............................................................................................|
-  | . Randomized Algorithms                 | ncludes functions like std::shuffle and std::sample for randomizing ranges.                  |
+  | . Randomized Algorithms                 | ncludes functions like std::shuffle and std::sample for randomizing ranges.                   |
   ..........................................|..............................................................................................|
   | . Utility Functions                     | Helper functions like std::min, std::max, std::clamp, and std::lexicographical_compare.      |
   ------------------------------------------------------------------------------------------------------------------------------------------
