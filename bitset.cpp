@@ -122,6 +122,43 @@ Common Use Cases:
 |                                                                                             |
 =============================================================================================*/
 
+//----------------------------- Implementation of <bitset> ------------------------------------//
 
+/*--------------------------------Example 1: Basic Operations with <bitset>---------------------*/
+
+// #include <iostream>
+// #include <bitset>
+
+// int main() {
+//     std::bitset<8> bits("10101010"); // 8-bit binary number
+
+//     std::cout << "Initial bitset: " << bits << '\n';
+
+//     bits.set(0); // Set the 0th bit
+//     std::cout << "After setting 0th bit: " << bits << '\n';
+
+//     bits.reset(1); // Reset the 1st bit
+//     std::cout << "After resetting 1st bit: " << bits << '\n';
+
+//     bits.flip(); // Flip all bits
+//     std::cout << "After flipping all bits: " << bits << '\n';
+
+//     std::cout << "Number of set bits: " << bits.count() << '\n';
+//     std::cout << "Bit at position 2: " << bits.test(2) << '\n';
+
+//     return 0;
+// }
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Initial bitset:          10101010
+After setting 0th bit:   10101011
+After resetting 1st bit: 10101001
+After flipping all bits: 01010110
+Number of set bits:      4
+Bit at position 2:       1
+=====================================================================*/
 
 
