@@ -287,19 +287,19 @@ b1 != b3: 1
 
 /* ----------------------Example 7: Customizing Output with std::bitset-----------------*/
 
-#include <bitset>
-#include <iostream>
+// #include <bitset>
+// #include <iostream>
 
-int main() {
-    std::bitset<8> b("11010101");
+// int main() {
+//     std::bitset<8> b("11010101");
 
-    // Custom print
-    for (size_t i = 0; i < b.size(); ++i) {
-        std::cout << "Bit " << i << ": " << b[i] << "\n";
-    }
+//     // Custom print
+//     for (size_t i = 0; i < b.size(); ++i) {
+//         std::cout << "Bit " << i << ": " << b[i] << "\n";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 /*============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
@@ -313,4 +313,35 @@ Bit 4: 1
 Bit 5: 0
 Bit 6: 1
 Bit 7: 1
+=====================================================================*/
+
+/* ----------------------------Example 8: Using std::bitset for Binary Addition------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b1("1101");  // 13 in decimal
+//     std::bitset<8> b2("1011");  // 11 in decimal
+
+//     // Perform binary addition
+//     std::bitset<8> result = b1 ^ b2; // XOR gives sum without carry
+//     std::bitset<8> carry = (b1 & b2) << 1; // AND gives carry, shifted left
+
+//     while (carry.any()) {
+//         std::bitset<8> temp = result;
+//         result = result ^ carry;
+//         carry = (temp & carry) << 1;
+//     }
+
+//     std::cout << "Binary addition result: " << result << "\n";
+
+//     return 0;
+// }
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Binary addition result: 11000
 =====================================================================*/
