@@ -31,3 +31,48 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 --------------------------------------------------------------------------------------------------------------*/
+
+/*=======================================================================================
+|                     Mastering <bitset> in C++: A Complete Learning Guide               |
+========================================================================================
+
+Description:
+------------
+The <bitset> header in C++ provides a powerful way to handle fixed-size binary data 
+efficiently. Unlike vector<bool>, which is dynamically allocated, std::bitset<N> is 
+memory-efficient, fast, and ideal for bitwise operations.
+
+Key Features:
+-------------
+- Fixed-size sequence of N bits
+- Memory efficient implementation
+- Fast bitwise operations
+- Compile-time size determination
+- Direct bit manipulation capabilities
+
+Common Use Cases:
+----------------
+1. Flag management
+2. Binary operations
+3. State tracking
+4. Memory-efficient boolean arrays
+5. Bit manipulation tasks
+
+=======================================================================================*/
+
+/*======================== Key <bitset> Features ===========================
+|  Feature      | Description                  | Example                  |
+|---------------|------------------------------|--------------------------|
+| .set()        | Sets all bits to 1           | b.set();                 |
+| .reset()      | Sets all bits to 0           | b.reset();               |
+| .flip()        | Toggles all bits             | b.flip();                 |
+| .count()      | Returns number of 1s         | b.count();               |
+| .any()        | Checks if any bit is 1       | b.any();                 |
+| .none()       | Checks if all bits are 0     | b.none();                |
+| .size()       | Returns total bit size       | b.size();                |
+| .test(i)      | Checks if bit at index i     | b.test(3);               |
+| .to_ulong()   | Converts to unsigned long    | b.to_ulong();            |
+| .to_string()  | Converts to binary string    | b.to_string();           |
+========================================================================*/
+
+
