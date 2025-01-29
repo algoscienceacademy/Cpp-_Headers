@@ -284,3 +284,33 @@ Results:
 b1 == b2: 1
 b1 != b3: 1
 =====================================================================*/
+
+/* ----------------------Example 7: Customizing Output with std::bitset-----------------*/
+
+#include <bitset>
+#include <iostream>
+
+int main() {
+    std::bitset<8> b("11010101");
+
+    // Custom print
+    for (size_t i = 0; i < b.size(); ++i) {
+        std::cout << "Bit " << i << ": " << b[i] << "\n";
+    }
+
+    return 0;
+}
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Bit 0: 1
+Bit 1: 0
+Bit 2: 1
+Bit 3: 0
+Bit 4: 1
+Bit 5: 0
+Bit 6: 1
+Bit 7: 1
+=====================================================================*/
