@@ -348,28 +348,28 @@ Binary addition result: 000011000
 
 /* --------------------------Example 9: Checking Palindromic Bits-------------------- */
 
-#include <bitset>
-#include <iostream>
+// #include <bitset>
+// #include <iostream>
 
-bool isPalindrome(const std::bitset<8>& bits) {
-    size_t n = bits.size();
-    for (size_t i = 0; i < n / 2; ++i) {
-        if (bits[i] != bits[n - i - 1]) {
-            return false;
-        }
-    }
-    return true;
-}
+// bool isPalindrome(const std::bitset<8>& bits) {
+//     size_t n = bits.size();
+//     for (size_t i = 0; i < n / 2; ++i) {
+//         if (bits[i] != bits[n - i - 1]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
-int main() {
-    std::bitset<8> b1("10000001"); // Palindrome
-    std::bitset<8> b2("11001001"); // Not a palindrome
+// int main() {
+//     std::bitset<8> b1("10000001"); // Palindrome
+//     std::bitset<8> b2("11001001"); // Not a palindrome
 
-    std::cout << "b1 is palindrome: " << isPalindrome(b1) << "\n";
-    std::cout << "b2 is palindrome: " << isPalindrome(b2) << "\n";
+//     std::cout << "b1 is palindrome: " << isPalindrome(b1) << "\n";
+//     std::cout << "b2 is palindrome: " << isPalindrome(b2) << "\n";
 
-    return 0;
-}
+//     return 0;
+// }
 
 /*============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
@@ -378,3 +378,36 @@ Results:
 b1 is palindrome: 1
 b2 is palindrome: 0
 =====================================================================*/
+
+/* ------------------------ Example 10: Representing Permissions Using std::bitset------------------------*/
+
+#include <bitset>
+#include <iostream>
+
+int main() {
+    // Permissions: Read, Write, Execute
+    std::bitset<3> userPerms("101"); // Read and Execute
+    std::bitset<3> groupPerms("110"); // Read and Write
+
+    std::cout << "User Permissions: " << userPerms << "\n";
+    std::cout << "Group Permissions: " << groupPerms << "\n";
+
+    // Check specific permissions
+    std::cout << "User has write permission: " << userPerms.test(1) << "\n";
+    std::cout << "Group has execute permission: " << groupPerms.test(0) << "\n";
+
+    return 0;
+}
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+User Permissions: 101
+Group Permissions: 110
+User has write permission: 0
+Group has execute permission: 0
+=====================================================================*/
+
+
+
