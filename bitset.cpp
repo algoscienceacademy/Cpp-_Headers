@@ -343,5 +343,38 @@ Bit 7: 1
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
-Binary addition result: 11000
+Binary addition result: 000011000
+=====================================================================*/
+
+/* --------------------------Example 9: Checking Palindromic Bits-------------------- */
+
+#include <bitset>
+#include <iostream>
+
+bool isPalindrome(const std::bitset<8>& bits) {
+    size_t n = bits.size();
+    for (size_t i = 0; i < n / 2; ++i) {
+        if (bits[i] != bits[n - i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    std::bitset<8> b1("10000001"); // Palindrome
+    std::bitset<8> b2("11001001"); // Not a palindrome
+
+    std::cout << "b1 is palindrome: " << isPalindrome(b1) << "\n";
+    std::cout << "b2 is palindrome: " << isPalindrome(b2) << "\n";
+
+    return 0;
+}
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+b1 is palindrome: 1
+b2 is palindrome: 0
 =====================================================================*/
