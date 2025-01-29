@@ -232,3 +232,31 @@ Results:
 Number of set bits: 4
 Is bit 3 set? 1
 =====================================================================*/
+
+/* ----------------------------Example 5: Converting std::bitset to Other Formats-----------------*/
+
+#include <bitset>
+#include <iostream>
+#include <string>
+
+int main() {
+    std::bitset<8> b("10110110");
+
+    // Convert to unsigned long
+    unsigned long num = b.to_ulong();
+    std::cout << "Binary to unsigned long: " << num << "\n";
+
+    // Convert to string
+    std::string str = b.to_string();
+    std::cout << "Binary to string: " << str << "\n";
+
+    return 0;
+}
+
+/*============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Binary to unsigned long: 182
+Binary to string: 10110110
+=====================================================================*/
