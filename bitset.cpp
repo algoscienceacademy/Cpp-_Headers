@@ -328,34 +328,34 @@ Bit 7: 1
 
 //? ----------------------------Example 8: Using std::bitset for Binary Addition------*/
 
-// #include <bitset>
-// #include <iostream>
+#include <bitset>
+#include <iostream>
 
-// int main() {
-//     std::bitset<8> b1("1101");  // 13 in decimal
-//     std::bitset<8> b2("1011");  // 11 in decimal
+int main() {
+    std::bitset<8> b1("1101");  // 13 in decimal
+    std::bitset<8> b2("1011");  // 11 in decimal
 
-//     // Perform binary addition
-//     std::bitset<8> result = b1 ^ b2; // XOR gives sum without carry
-//     std::bitset<8> carry = (b1 & b2) << 1; // AND gives carry, shifted left
+    // Perform binary addition
+    std::bitset<8> result = b1 ^ b2; // XOR gives sum without carry
+    std::bitset<8> carry = (b1 & b2) << 1; // AND gives carry, shifted left
 
-//     while (carry.any()) {
-//         std::bitset<8> temp = result;
-//         result = result ^ carry;
-//         carry = (temp & carry) << 1;
-//     }
+    while (carry.any()) {
+        std::bitset<8> temp = result;
+        result = result ^ carry;
+        carry = (temp & carry) << 1;
+    }
 
-//     std::cout << "Binary addition result: " << result << "\n";
+    std::cout << "Binary addition result: " << result << "\n";
 
-//     return 0;
-// }
+    return 0;
+}
 
 /** 
 *?============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
-Binary addition result: 000011000
+Binary addition result: 00011000
 *?=====================================================================*/
 
 //? --------------------------Example 9: Checking Palindromic Bits-------------------- */
