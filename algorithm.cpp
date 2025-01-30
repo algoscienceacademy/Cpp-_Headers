@@ -1,56 +1,47 @@
 /**
- * @file algorithm.cpp
- * @author Shahrear Hossain Shawon
- * @brief Comprehensive C++ Programming Guide for All Header Files
- * @version 1.0.0
- * @date 2025-01-27
+ * ==================================================================================
+ * █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+ * █  Algorithm - Comprehensive C++ Programming Guide                     █
+ * █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
- * @copyright Copyright (c) 2025 Shahrear Hossain Shawon
+ * @description A comprehensive guide to C++ Algorithm implementation and best practices.
+ *              Part of the C++ Programming Header Series.
  * 
- * /*! \mainpage Algorithm Library Guide
- * *
- * *  Introduction
- * * This document provides a comprehensive guide for the C++ Algorithm library.
- * *
- * *  Author Information
- * * - Author: Shahrear Hossain Shawon
- * * - Organization: Algo science Academy
- * * - GitHub: algoscienceacademy
- * *
- * * Credits
- * * - C++ Reference
- * * - C++ Standard Library
- * * - ChatGPT
- * *
- * *  license
- * * This project is licensed under the MIT License.
- * */
-
-/** 
- * ? MIT License
+ * @author      Shahrear Hossain Shawon
+ * @github      algoscienceacademy
+ * @institution International Islamic University Chittagong (IIUC)
  * 
- * ! Copyright (c) 2025 Shahrear Hossain Shawon
+ * @version     1.0.0
+ * @date        Created: January 25, 2025
+ *              Updated: January 27, 2025
  * 
- * * Permission is hereby granted, free of charge, to any person obtaining a copy
- * * of this software and associated documentation files (the "Software"), to deal
- * * in the Software without restriction, including without limitation the rights
- * * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * * copies of the Software, and to permit persons to whom the Software is
- * * furnished to do so, subject to the following conditions:
+ * @credits     C++ Standard Library
+ *              C++ Reference
+ *              ChatGPT
  * 
- * TODO: The above copyright notice and this permission notice shall be included in all
- * TODO: copies or substantial portions of the Software.
+ * @license     MIT License
  * 
- * @note THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * @note IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * @note FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * @note AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * @note LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * @note OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * @note SOFTWARE.
+ * @copyright   Copyright (c) 2025
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ==================================================================================
  */
-
-
 
 /*---------------------------------Algorithm ---------------------------------
 
