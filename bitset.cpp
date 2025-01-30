@@ -1,7 +1,7 @@
 /**
  ** ==================================================================================
  *? █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
- *? █  Bitset - Comprehensive C++ Programming Guide                                     █
+ *? █  Bitset - Comprehensive C++ Programming Guide                        █
  *? █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
  ** @description A comprehensive guide to C++ Bitset implementation and best practices.
@@ -77,7 +77,7 @@
 **|---------------|------------------------------|--------------------------|
 **| .set()        | Sets all bits to 1           | b.set();                 |
 **| .reset()      | Sets all bits to 0           | b.reset();               |
-**| .flip()        | Toggles all bits             | b.flip();               |
+**| .flip()        | Toggles all bits             | b.flip();                 |
 **| .count()      | Returns number of 1s         | b.count();               |
 **| .any()        | Checks if any bit is 1       | b.any();                 |
 **| .none()       | Checks if all bits are 0     | b.none();                |
@@ -100,7 +100,7 @@
 **|    - Practice with fundamental operations:                                                  |
 **|      * set() for setting bits to 1                                                          |
 **|      * reset() for clearing bits to 0                                                       |
-**|      * flip() for toggling bits                                                             |
+**|      * flip() for toggling bits                                                              |
 **|      * count() for counting set bits                                                        |
 **|                                                                                             |
 *?| 3. Solve Bitwise Problems                                                                   |
@@ -112,7 +112,7 @@
 **|                                                                                             |
 *?| 4. Performance Comparison                                                                   |
 **|    - Compare with vector<bool>:                                                             |
-**|      * Memory efficiency                                                                    |
+**|      * Memory efficiency                                                                     |
 **|      * Access speed                                                                         |
 **|      * Operation performance                                                                |
 **|                                                                                             |
@@ -122,7 +122,7 @@
 **|      * Data compression                                                                     |
 **|      * Network programming (IPv4/IPv6)                                                      |
 **|      * Error correction codes                                                               |
-**|      * Bloom filters implementation                                                         |
+**|      * Bloom filters implementation                                                          |
 **|                                                                                             |
 **=============================================================================================*/
 
