@@ -1,7 +1,7 @@
 /**
  ** ==================================================================================
  ** █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
- ** █  Bitset - Comprehensive C++ Programming Guide                        █
+ *? █  Bitset - Comprehensive C++ Programming Guide                        █
  ** █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
  ** @description A comprehensive guide to C++ Bitset implementation and best practices.
@@ -61,18 +61,18 @@
 ** - Compile-time size determination
 ** - Direct bit manipulation capabilities
 
-*Common Use Cases:
-----------------
-1. Flag management
-2. Binary operations
-3. State tracking
-4. Memory-efficient boolean arrays
-5. Bit manipulation tasks
+*?Common Use Cases:
+*!----------------
+**1. Flag management
+**2. Binary operations
+**3. State tracking
+**4. Memory-efficient boolean arrays
+**5. Bit manipulation tasks
 
-=======================================================================================*/
+**=======================================================================================*/
 
 /**
-**======================== Key <bitset> Features ===========================
+*?======================== Key <bitset> Features ===========================
 *?|  Feature      | Description                  | Example                  |
 **|---------------|------------------------------|--------------------------|
 **| .set()        | Sets all bits to 1           | b.set();                 |
@@ -88,46 +88,47 @@
 **========================================================================*/
 
 
-/*============================ Pro Tips for Learning <bitset> Faster ============================
-|                                                                                             |
-| 1. Visualize Binary Representations                                                         |
-|    - Use std::bitset<N>::to_string() for clear binary visualization                         |
-|    - Practice reading and interpreting binary patterns                                      |
-|    - Experiment with different sizes of bitsets                                             |
-|                                                                                             |
-| 2. Write Small Experiments                                                                  |
-|    - Practice with fundamental operations:                                                  |
-|      * set() for setting bits to 1                                                          |
-|      * reset() for clearing bits to 0                                                       |
-|      * flip() for toggling bits                                                              |
-|      * count() for counting set bits                                                        |
-|                                                                                             |
-| 3. Solve Bitwise Problems                                                                   |
-|    - Implement common bit manipulation algorithms:                                          |
-|      * Parity checking                                                                      |
-|      * Gray code generation                                                                 |
-|      * Hamming code implementation                                                          |
-|      * Subnet mask calculations                                                             |
-|                                                                                             |
-| 4. Performance Comparison                                                                   |
-|    - Compare with vector<bool>:                                                             |
-|      * Memory efficiency                                                                     |
-|      * Access speed                                                                         |
-|      * Operation performance                                                                |
-|                                                                                             |
-| 5. Real-World Applications                                                                  |
-|    - Study practical uses in:                                                               |
-|      * Cryptography algorithms                                                              |
-|      * Data compression                                                                     |
-|      * Network programming (IPv4/IPv6)                                                      |
-|      * Error correction codes                                                               |
-|      * Bloom filters implementation                                                          |
-|                                                                                             |
-=============================================================================================*/
+/**
+*? ============================ Pro Tips for Learning <bitset> Faster ============================
+**|                                                                                             |
+*?| 1. Visualize Binary Representations                                                         |
+**|    - Use std::bitset<N>::to_string() for clear binary visualization                         |
+**|    - Practice reading and interpreting binary patterns                                      |
+**|    - Experiment with different sizes of bitsets                                             |
+**|                                                                                             |
+*?| 2. Write Small Experiments                                                                  |
+**|    - Practice with fundamental operations:                                                  |
+**|      * set() for setting bits to 1                                                          |
+**|      * reset() for clearing bits to 0                                                       |
+**|      * flip() for toggling bits                                                              |
+**|      * count() for counting set bits                                                        |
+**|                                                                                             |
+*?| 3. Solve Bitwise Problems                                                                   |
+**|    - Implement common bit manipulation algorithms:                                          |
+**|      * Parity checking                                                                      |
+**|      * Gray code generation                                                                 |
+**|      * Hamming code implementation                                                          |
+**|      * Subnet mask calculations                                                             |
+**|                                                                                             |
+*?| 4. Performance Comparison                                                                   |
+**|    - Compare with vector<bool>:                                                             |
+**|      * Memory efficiency                                                                     |
+**|      * Access speed                                                                         |
+**|      * Operation performance                                                                |
+**|                                                                                             |
+*?| 5. Real-World Applications                                                                  |
+**|    - Study practical uses in:                                                               |
+**|      * Cryptography algorithms                                                              |
+**|      * Data compression                                                                     |
+**|      * Network programming (IPv4/IPv6)                                                      |
+**|      * Error correction codes                                                               |
+**|      * Bloom filters implementation                                                          |
+**|                                                                                             |
+**=============================================================================================*/
 
-//----------------------------- Implementation of <bitset> ------------------------------------//
+//?----------------------------- Implementation of <bitset> ------------------------------------//
 
-/*--------------------------------Example 1: Basic Operations with <bitset>---------------------*/
+//?--------------------------------Example 1: Basic Operations with <bitset>---------------------//
 
 // #include <iostream>
 // #include <bitset>
@@ -152,7 +153,8 @@
 //     return 0;
 // }
 
-/*============================ Program Output ============================
+/**
+*?============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
@@ -162,9 +164,9 @@ After resetting 1st bit: 10101001
 After flipping all bits: 01010110
 Number of set bits:      4
 Bit at position 2:       1
-=====================================================================*/
+*?=====================================================================*/
 
-/* ---------------------------Example 2: Modifying Bits-------------------------*/
+//? ---------------------------Example 2: Modifying Bits-------------------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -181,14 +183,15 @@ Bit at position 2:       1
 //     return 0;
 // }
 
-/*============================ Program Output ============================
+/**
+*?============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
 After modifications: 10101011
-=====================================================================*/
+*?=====================================================================*/
 
-/* ---------------------------Example 3: Bitwise Operations-------------------------*/
+//? ---------------------------Example 3: Bitwise Operations-------------------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -204,17 +207,18 @@ After modifications: 10101011
 //     return 0;
 // }
 
-/*============================ Program Output ============================
+/**
+*?============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
 b1 & b2: 1000
 b1 | b2: 1110
 b1 ^ b2: 0110
-=====================================================================*/
+*?=====================================================================*/
 
 
-/* ----------------------------Example 4: Counting Bits and Checking Specific Bits-------------*/
+//? ----------------------------Example 4: Counting Bits and Checking Specific Bits-------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -236,7 +240,7 @@ Number of set bits: 4
 Is bit 3 set? 1
 =====================================================================*/
 
-/* ----------------------------Example 5: Converting std::bitset to Other Formats-----------------*/
+//? ----------------------------Example 5: Converting std::bitset to Other Formats-----------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -264,7 +268,7 @@ Binary to unsigned long: 182
 Binary to string: 10110110
 =====================================================================*/
 
-/* ------------------------Example 6: Comparing Two std::bitset Instances --------------*/
+//? ------------------------Example 6: Comparing Two std::bitset Instances --------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -288,7 +292,7 @@ b1 == b2: 1
 b1 != b3: 1
 =====================================================================*/
 
-/* ----------------------Example 7: Customizing Output with std::bitset-----------------*/
+//? ----------------------Example 7: Customizing Output with std::bitset-----------------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -318,7 +322,7 @@ Bit 6: 1
 Bit 7: 1
 =====================================================================*/
 
-/* ----------------------------Example 8: Using std::bitset for Binary Addition------*/
+//? ----------------------------Example 8: Using std::bitset for Binary Addition------*/
 
 // #include <bitset>
 // #include <iostream>
@@ -349,7 +353,7 @@ Results:
 Binary addition result: 000011000
 =====================================================================*/
 
-/* --------------------------Example 9: Checking Palindromic Bits-------------------- */
+//? --------------------------Example 9: Checking Palindromic Bits-------------------- */
 
 // #include <bitset>
 // #include <iostream>
@@ -374,7 +378,7 @@ Binary addition result: 000011000
 //     return 0;
 // }
 
-/*============================ Program Output ============================
+//?============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
@@ -382,7 +386,7 @@ b1 is palindrome: 1
 b2 is palindrome: 0
 =====================================================================*/
 
-/* ------------------------ Example 10: Representing Permissions Using std::bitset------------------------*/
+//? ------------------------ Example 10: Representing Permissions Using std::bitset------------------------*/
 
 // #include <bitset>
 // #include <iostream>
