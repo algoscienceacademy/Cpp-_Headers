@@ -1,26 +1,27 @@
-/******************************************************************************
- * Title: Bitset - Comprehensive C++ Programming Guide
+/**
+ * ==================================================================================
+ * █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+ * █  Bitset - Comprehensive C++ Programming Guide                        █
+ * █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
- * Description:
- * A comprehensive guide to C++ Bitset implementation and best practices.
- * Part of the C++ Programming Header Series.
+ * @description A comprehensive guide to C++ Bitset implementation and best practices.
+ *              Part of the C++ Programming Header Series.
  * 
- * Author: Shahrear Hossain Shawon
- * GitHub: algoscienceacademy
- * Institution: International Islamic University Chittagong (IIUC)
+ * @author      Shahrear Hossain Shawon
+ * @github      algoscienceacademy
+ * @institution International Islamic University Chittagong (IIUC)
  * 
- * Version: 1.0.0
- * Created: January 27, 2025
- * Updated: January 29, 2025
+ * @version     1.0.0
+ * @date        Created: January 27, 2025
+ *              Updated: January 29, 2025
  * 
- * Credits:
- * - C++ Standard Library
- * - C++ Reference
- * - ChatGPT
+ * @credits     C++ Standard Library
+ *              C++ Reference
+ *              ChatGPT
  * 
- * License: MIT License
+ * @license     MIT License
  * 
- * Copyright (c) 2025
+ * @copyright   Copyright (c) 2025
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -39,7 +40,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- ******************************************************************************/
+ * ==================================================================================
+ */
 
 /*=======================================================================================
 |                     Mastering <bitset> in C++: A Complete Learning Guide               |
@@ -381,23 +383,23 @@ b2 is palindrome: 0
 
 /* ------------------------ Example 10: Representing Permissions Using std::bitset------------------------*/
 
-#include <bitset>
-#include <iostream>
+// #include <bitset>
+// #include <iostream>
 
-int main() {
-    // Permissions: Read, Write, Execute
-    std::bitset<3> userPerms("101"); // Read and Execute
-    std::bitset<3> groupPerms("110"); // Read and Write
+// int main() {
+//     // Permissions: Read, Write, Execute
+//     std::bitset<3> userPerms("101"); // Read and Execute
+//     std::bitset<3> groupPerms("110"); // Read and Write
 
-    std::cout << "User Permissions: " << userPerms << "\n";
-    std::cout << "Group Permissions: " << groupPerms << "\n";
+//     std::cout << "User Permissions: " << userPerms << "\n";
+//     std::cout << "Group Permissions: " << groupPerms << "\n";
 
-    // Check specific permissions
-    std::cout << "User has write permission: " << userPerms.test(1) << "\n";
-    std::cout << "Group has execute permission: " << groupPerms.test(0) << "\n";
+//     // Check specific permissions
+//     std::cout << "User has write permission: " << userPerms.test(1) << "\n";
+//     std::cout << "Group has execute permission: " << groupPerms.test(0) << "\n";
 
-    return 0;
-}
+//     return 0;
+// }
 
 /*============================ Program Output ============================
 Command: g++ -std=c++11 bitset.cpp -o bitset
