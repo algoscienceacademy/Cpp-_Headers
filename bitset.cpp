@@ -423,6 +423,45 @@ User has write permission: 0
 Group has execute permission: 0
 *?=====================================================================*/
 
+//? ------------------------ Example 11: Masking Bits------------------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b("11110000"); // Original bits
+//     std::bitset<8> mask("00001111"); // Mask to isolate last 4 bits
+
+//     std::bitset<8> result = b & mask;
+
+//     std::cout << "Original bits: " << b << "\n";
+//     std::cout << "Masked result: " << result << "\n";
+
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Original bits: 11110000
+Masked result: 00000000
+*?=====================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * ████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗
