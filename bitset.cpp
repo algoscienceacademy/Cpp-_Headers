@@ -1,7 +1,7 @@
 /**
  ** ==================================================================================
  *? █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
- *? █  Bitset - Comprehensive C++ Programming Guide                        █
+ *? █  Bitset - Comprehensive C++ Programming Guide                                     █
  *? █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
  ** @description A comprehensive guide to C++ Bitset implementation and best practices.
