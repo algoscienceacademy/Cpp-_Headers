@@ -238,7 +238,7 @@ Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
 Number of set bits: 4
-Is bit 3 set? 1
+Is bit 3 set? 0
 *?=====================================================================*/
 
 //? ----------------------------Example 5: Converting std::bitset to Other Formats-----------------*/
