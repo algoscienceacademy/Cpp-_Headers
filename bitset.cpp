@@ -193,19 +193,19 @@ After modifications: 10101011
 
 //? ---------------------------Example 3: Bitwise Operations-------------------------*/
 
-// #include <bitset>
-// #include <iostream>
+#include <bitset>
+#include <iostream>
 
-// int main() {
-//     std::bitset<8> b1("1100");
-//     std::bitset<8> b2("1010");
+int main() {
+    std::bitset<4> b1("1100");
+    std::bitset<4> b2("1010");
 
-//     std::cout << "b1 & b2: " << (b1 & b2) << "\n"; // AND
-//     std::cout << "b1 | b2: " << (b1 | b2) << "\n"; // OR
-//     std::cout << "b1 ^ b2: " << (b1 ^ b2) << "\n"; // XOR
+    std::cout << "b1 & b2: " << (b1 & b2) << "\n"; // AND
+    std::cout << "b1 | b2: " << (b1 | b2) << "\n"; // OR
+    std::cout << "b1 ^ b2: " << (b1 ^ b2) << "\n"; // XOR
 
-//     return 0;
-// }
+    return 0;
+}
 
 /**
 *?============================ Program Output ============================
