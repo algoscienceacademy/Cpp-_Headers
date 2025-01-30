@@ -1,11 +1,11 @@
 /**
- * ==================================================================================
- * █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
- * █  Bitset - Comprehensive C++ Programming Guide                        █
- * █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+ ** ==================================================================================
+ ** █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+ ** █  Bitset - Comprehensive C++ Programming Guide                        █
+ ** █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
  * 
- * @description A comprehensive guide to C++ Bitset implementation and best practices.
- *              Part of the C++ Programming Header Series.
+ ** @description A comprehensive guide to C++ Bitset implementation and best practices.
+ **              Part of the C++ Programming Header Series.
  * 
  * @author      Shahrear Hossain Shawon
  * @github      algoscienceacademy
@@ -23,45 +23,45 @@
  * 
  * @copyright   Copyright (c) 2025
  * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ *? Permission is hereby granted, free of charge, to any person obtaining a copy
+ *? of this software and associated documentation files (the "Software"), to deal
+ *? in the Software without restriction, including without limitation the rights
+ *? to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *? copies of the Software, and to permit persons to whom the Software is
+ *? furnished to do so, subject to the following conditions: 
+ *? The above copyright notice and this permission notice shall be included in all
+ *? copies or substantial portions of the Software.
  * 
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- * ==================================================================================
+ *! THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *! IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *! FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *! AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *! LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *! OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ *! SOFTWARE.
+ ** ==================================================================================
  */
 
-/*=======================================================================================
-|                     Mastering <bitset> in C++: A Complete Learning Guide               |
-========================================================================================
+/**
+**=======================================================================================
+*?|                     Mastering <bitset> in C++: A Complete Learning Guide             |
+**=======================================================================================
 
-Description:
-------------
-The <bitset> header in C++ provides a powerful way to handle fixed-size binary data 
-efficiently. Unlike vector<bool>, which is dynamically allocated, std::bitset<N> is 
-memory-efficient, fast, and ideal for bitwise operations.
+*?Description:
+*!------------
+**The <bitset> header in C++ provides a powerful way to handle fixed-size binary data 
+**efficiently. Unlike vector<bool>, which is dynamically allocated, std::bitset<N> is 
+**memory-efficient, fast, and ideal for bitwise operations.
 
-Key Features:
--------------
-- Fixed-size sequence of N bits
-- Memory efficient implementation
-- Fast bitwise operations
-- Compile-time size determination
-- Direct bit manipulation capabilities
+*?Key Features:
+*!-------------------------------
+** - Fixed-size sequence of N bits
+** - Memory efficient implementation
+** - Fast bitwise operations
+** - Compile-time size determination
+** - Direct bit manipulation capabilities
 
-Common Use Cases:
+*Common Use Cases:
 ----------------
 1. Flag management
 2. Binary operations
@@ -71,20 +71,21 @@ Common Use Cases:
 
 =======================================================================================*/
 
-/*======================== Key <bitset> Features ===========================
-|  Feature      | Description                  | Example                  |
-|---------------|------------------------------|--------------------------|
-| .set()        | Sets all bits to 1           | b.set();                 |
-| .reset()      | Sets all bits to 0           | b.reset();               |
-| .flip()        | Toggles all bits             | b.flip();                 |
-| .count()      | Returns number of 1s         | b.count();               |
-| .any()        | Checks if any bit is 1       | b.any();                 |
-| .none()       | Checks if all bits are 0     | b.none();                |
-| .size()       | Returns total bit size       | b.size();                |
-| .test(i)      | Checks if bit at index i     | b.test(3);               |
-| .to_ulong()   | Converts to unsigned long    | b.to_ulong();            |
-| .to_string()  | Converts to binary string    | b.to_string();           |
-========================================================================*/
+/**
+**======================== Key <bitset> Features ===========================
+*?|  Feature      | Description                  | Example                  |
+**|---------------|------------------------------|--------------------------|
+**| .set()        | Sets all bits to 1           | b.set();                 |
+**| .reset()      | Sets all bits to 0           | b.reset();               |
+**| .flip()        | Toggles all bits             | b.flip();                 |
+**| .count()      | Returns number of 1s         | b.count();               |
+**| .any()        | Checks if any bit is 1       | b.any();                 |
+**| .none()       | Checks if all bits are 0     | b.none();                |
+**| .size()       | Returns total bit size       | b.size();                |
+**| .test(i)      | Checks if bit at index i     | b.test(3);               |
+**| .to_ulong()   | Converts to unsigned long    | b.to_ulong();            |
+**| .to_string()  | Converts to binary string    | b.to_string();           |
+**========================================================================*/
 
 
 /*============================ Pro Tips for Learning <bitset> Faster ============================
@@ -413,26 +414,20 @@ Group has execute permission: 0
 
 
 /*
-
-    ████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗
-    ╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║  ██║    ██║   ██║██╔═══██╗██║   ██║
-       ██║   ███████║███████║██╔██╗ ██║███████║    ██║   ██║██║   ██║██║   ██║
-       ██║   ██╔══██║██╔══██║██║╚██╗██║██╔══██║    ╚██╗ ██╔╝██║   ██║██║   ██║
-       ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██║     ╚████╔╝ ╚██████╔╝╚██████╔╝
-       ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝      ╚═══╝   ╚═════╝  ╚═════╝
-
-
-    
-    ██████╗ ██╗   ██╗███████╗███████╗ █████╗ ███╗   ██╗██╗   ██╗ ██████╗ ██╗   ██╗
-    ██╔══██╗██║   ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██║   ██║██╔═══██╗██║   ██║
-    ██████╔╝██║   ██║███████╗███████╗███████║██╔██╗ ██║██║   ██║██║   ██║██║   ██║
-    ██╔═══╝ ██║   ██║╚════██║╚════██║██╔══██║██║╚██╗██║██║   ██║██║   ██║██║   ██║
-    ██║     ╚██████╔╝███████║███████║██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝╚██████╔╝
-    ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝  ╚═════╝ 
-    
-
-    
-*/
+ * ████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗
+ * ╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║  ██║    ██║   ██║██╔═══██╗██║   ██║
+ *    ██║   ███████║███████║██╔██╗ ██║███████║    ██║   ██║██║   ██║██║   ██║
+ *    ██║   ██╔══██║██╔══██║██║╚██╗██║██╔══██║    ╚██╗ ██╔╝██║   ██║██║   ██║
+ *    ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██║     ╚████╔╝ ╚██████╔╝╚██████╔╝
+ *    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝      ╚═══╝   ╚═════╝  ╚═════╝
+ * 
+ * ██████╗ ██╗   ██╗███████╗███████╗ █████╗ ███╗   ██╗██╗   ██╗ ██████╗ ██╗   ██╗
+ * ██╔══██╗██║   ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██║   ██║██╔═══██╗██║   ██║
+ * ██████╔╝██║   ██║███████╗███████╗███████║██╔██╗ ██║██║   ██║██║   ██║██║   ██║
+ * ██╔═══╝ ██║   ██║╚════██║╚════██║██╔══██║██║╚██╗██║██║   ██║██║   ██║██║   ██║
+ * ██║     ╚██████╔╝███████║███████║██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝╚██████╔╝
+ * ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝  ╚═════╝ 
+ */
 
 
 
