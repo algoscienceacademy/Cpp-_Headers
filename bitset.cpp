@@ -449,6 +449,68 @@ Original bits: 11110000
 Masked result: 00000000
 *?=====================================================================*/
 
+//? ------------------------ Example 12: Using std::bitset for Bit Rotation------------------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// std::bitset<8> rotateLeft(const std::bitset<8>& bits, size_t n) {
+//     return (bits << n) | (bits >> (8 - n));
+// }
+
+// std::bitset<8> rotateRight(const std::bitset<8>& bits, size_t n) {
+//     return (bits >> n) | (bits << (8 - n));
+// }
+
+// int main() {
+//     std::bitset<8> b("10110011");
+
+//     std::cout << "Original bits:  " << b << "\n";
+//     std::cout << "After left rotation by 2: " << rotateLeft(b, 2) << "\n";
+//     std::cout << "After right rotation by 2: " << rotateRight(b, 2) << "\n";
+
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Original bits:  10110011
+After left rotation by 2: 11001101
+After right rotation by 2: 11101001
+*?=====================================================================*/
+
+//? ------------------------ Example 13: Finding the First Set and Unset Bit------------------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// int main() {
+//     std::bitset<8> b("10101000");
+
+//     // Find the first set bit
+//     size_t firstSet = b.to_string().find('1');
+//     std::cout << "First set bit at index: " << firstSet << "\n";
+
+//     // Find the first unset bit
+//     size_t firstUnset = b.to_string().find('0');
+//     std::cout << "First unset bit at index: " << firstUnset << "\n";
+
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+First set bit at index: 0
+First unset bit at index: 3
+*?=====================================================================*/
+
+
 
 
 
