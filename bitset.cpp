@@ -594,6 +594,12 @@ Contains 20: 0
 Contains 10 after removal: 0
 *?=====================================================================*/
 
+
+
+//! ------------------- Let's Get Started with Some Bitset Projects ----------------------//
+
+
+
 //?------------------------------ Subnet Mask Validation ---------------//
 
 // #include <iostream>
@@ -629,14 +635,130 @@ Results:
 Subnet: 11100000 is valid.
 *?=====================================================================*/
 
+//? ------------------------ Custom Binary Encryption---------------------//
 
+// #include <iostream>
+// #include <bitset>
+// #include <string>
 
+// std::string encryptDecrypt(const std::string& input, const std::string& key) {
+//     std::bitset<8> keyBits(key); 
+//     std::string result = "";
 
+//     for (char ch : input) {
+//         std::bitset<8> charBits(ch);
+//         charBits ^= keyBits; // XOR for encryption/decryption
+//         result += static_cast<char>(charBits.to_ulong());
+//     }
+//     return result;
+// }
 
+// int main() {
+//     std::string key = "10101010"; // 8-bit key
+//     std::string plaintext = "Hello";
+//     std::string encrypted = encryptDecrypt(plaintext, key);
+//     std::cout << "Encrypted: " << encrypted << '\n';
 
+//     std::string decrypted = encryptDecrypt(encrypted, key);
+//     std::cout << "Decrypted: " << decrypted << '\n';
 
+//     return 0;
+// }
 
+/**     
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
 
+Results:
+Encrypted: 
+Decrypted: Hello
+*?=====================================================================*/
+
+//? ------------------------Efficient Prime Number---------------------//
+
+// #include <iostream>
+// #include <bitset>
+
+// const int MAX = 50; // Limit for prime numbers
+
+// void sieveOfEratosthenes() {
+//     std::bitset<MAX + 1> primes;
+//     primes.set(); // Set all bits to 1 initially
+//     primes.reset(0); // 0 is not a prime number
+//     primes.reset(1); // 1 is not a prime number
+
+//     for (int p = 2; p * p <= MAX; ++p) {
+//         if (primes.test(p)) {
+//             for (int i = p * p; i <= MAX; i += p) {
+//                 primes.reset(i); // Mark multiples of p as non-prime
+//             }
+//         }
+//     }
+
+//     std::cout << "Prime numbers up to " << MAX << ": ";
+//     for (int i = 2; i <= MAX; ++i) {
+//         if (primes.test(i)) {
+//             std::cout << i << " ";
+//         }
+//     }
+//     std::cout << '\n';
+// }
+
+// int main() {
+//     sieveOfEratosthenes();
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Prime numbers up to 50: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+*?=====================================================================*/
+
+//? ------------------------IPv4 Address Validation---------------------//
+
+// #include <iostream>
+// #include <bitset>
+// #include <string>
+// #include <vector>
+
+// bool isValidIPv4(const std::string& ip) {
+//     std::vector<std::string> parts;
+//     size_t start = 0, end = 0;
+
+//     while ((end = ip.find('.', start)) != std::string::npos) {
+//         parts.push_back(ip.substr(start, end - start));
+//         start = end + 1;
+//     }
+//     parts.push_back(ip.substr(start));
+
+//     if (parts.size() != 4) return false; // Must have 4 parts
+
+//     for (const std::string& part : parts) {
+//         if (part.empty() || part.size() > 3) return false; // Invalid part length
+
+//         std::bitset<8> partBits(part);
+//         if (partBits.to_ulong() > 255) return false; // Invalid value
+//     }
+//     return true;
+// }
+
+// int main() {
+//     std::string ip = "178.228.5.67"; // Example IPv4 address
+//     std::cout << "IPv4 Address: " << ip
+//               << (isValidIPv4(ip) ? " is valid.\n" : " is invalid.\n");
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+IPv4 Address: 178.228.5.67zsh: abort  
+*?=====================================================================*/
 
 /*
  * ████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗
