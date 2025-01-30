@@ -510,11 +510,124 @@ First set bit at index: 0
 First unset bit at index: 3
 *?=====================================================================*/
 
+//? ------------------------ Example 14: Bitwise Operations on Multiple ------------------------*/
 
+// #include <bitset>
+// #include <iostream>
 
+// int main() {
+//     std::bitset<8> b1("11001100");
+//     std::bitset<8> b2("10101010");
 
+//     std::cout << "b1 AND b2: " << (b1 & b2) << "\n";
+//     std::cout << "b1 OR b2: " << (b1 | b2) << "\n";
+//     std::cout << "b1 XOR b2: " << (b1 ^ b2) << "\n";
 
+//     // Compound assignment
+//     b1 &= b2;
+//     std::cout << "b1 after AND with b2: " << b1 << "\n";
 
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+b1 AND b2: 10001000
+b1 OR b2: 11101110
+b1 XOR b2: 01100110
+b1 after AND with b2: 10001000
+*?=====================================================================*/
+
+//? ------------------------ Example 15: Creating a Simple Bitset-based Set Data Structure-----------------------*/
+
+// #include <bitset>
+// #include <iostream>
+
+// class BitsetSet {
+// public:
+//     BitsetSet(size_t size) : bits(size) {}
+
+//     void add(int index) {
+//         bits.set(index);
+//     }
+
+//     void remove(int index) {
+//         bits.reset(index);
+//     }
+
+//     bool contains(int index) {
+//         return bits.test(index);
+//     }
+
+// private:
+//     std::bitset<32> bits;
+// };
+
+// int main() {
+//     BitsetSet set(32);
+
+//     set.add(5);
+//     set.add(10);
+//     set.add(15);
+
+//     std::cout << "Contains 5: " << set.contains(5) << "\n";
+//     std::cout << "Contains 10: " << set.contains(10) << "\n";
+//     std::cout << "Contains 20: " << set.contains(20) << "\n";
+
+//     set.remove(10);
+//     std::cout << "Contains 10 after removal: " << set.contains(10) << "\n";
+
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Contains 5: 1
+Contains 10: 1
+Contains 20: 0
+Contains 10 after removal: 0
+*?=====================================================================*/
+
+//?------------------------------ Subnet Mask Validation ---------------//
+
+// #include <iostream>
+// #include <bitset>
+// #include <string>
+
+// bool isValidSubnet(const std::string& binarySubnet) {
+//     std::bitset<8> subnet(binarySubnet); 
+//     bool foundZero = false;
+
+//     for (int i = 7; i >= 0; --i) {
+//         if (subnet.test(i)) {
+//             if (foundZero) return false; // If 1 comes after a 0, invalid mask
+//         } else {
+//             foundZero = true; // Found a 0
+//         }
+//     }
+//     return true;
+// }
+
+// int main() {
+//     std::string subnet = "11100000"; // Example binary subnet mask
+//     std::cout << "Subnet: " << subnet 
+//               << (isValidSubnet(subnet) ? " is valid.\n" : " is invalid.\n");
+//     return 0;
+// }
+
+/**
+*?============================ Program Output ============================
+Command: g++ -std=c++11 bitset.cpp -o bitset
+
+Results:
+Subnet: 11100000 is valid.
+*?=====================================================================*/
 
 
 
