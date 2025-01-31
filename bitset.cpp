@@ -507,7 +507,7 @@ Command: g++ -std=c++11 bitset.cpp -o bitset
 
 Results:
 First set bit at index: 0
-First unset bit at index: 3
+First unset bit at index: 1
 *?=====================================================================*/
 
 //? ------------------------ Example 14: Bitwise Operations on Multiple ------------------------*/
