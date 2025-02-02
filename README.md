@@ -65,4 +65,3 @@ The project includes various examples demonstrating the use of different headers
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-![](https://komarev.com/ghpvc/?username=algoscienceacademy&color=green
